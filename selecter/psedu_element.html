@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1:after {
+        content: "after";
+        color: blue;
+      }
+      h2::before {
+        /* 콜론(:) --> 사용 가능, 표준은 쌍콜론(::)*/
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>가상 요소 선택자</h2>
+    <ul>
+      <li><a href="#" target="_blank">google</a></li>
+      <li><a href="#" target="_blank">daum</a></li>
+      <li><a href="#" target="_self">naver</a></li>
+    </ul>
+  </body>
+</html>

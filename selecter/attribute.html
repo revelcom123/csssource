@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>속성 선택자</h2>
+    <style>
+      /* [href] {
+        text-decoration: none;
+      } */
+      [target] {
+        text-decoration: none;
+      }
+      [target="_blank"] {
+        /* text-decoration: none; */
+        background-color: yellow;
+        color: black;
+      }
+      [target="_self"] {
+        /* text-decoration: none; */
+        background-color: red;
+        color: white;
+      }
+      .link1,
+      .link2 {
+        list-style-type: none;
+      }
+    </style>
+    <ul>
+      <li><a href="#" target="_blank" class="link1">google</a></li>
+      <li><a href="#" target="_blank" class="link1">daum</a></li>
+      <li><a href="#" target="_self" class="link1">naver</a></li>
+    </ul>
+  </body>
+</html>
