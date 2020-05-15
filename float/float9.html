@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+      }
+      header {
+        width: 960px;
+        background-color: #ccc;
+        line-height: 60px;
+        float: left;
+      }
+      header nav {
+        float: right;
+      }
+      nav ul li {
+        display: inline-block; /*수평정렬*/
+        margin-left: 20px;
+      }
+      a {
+        color: blue;
+      }
+      a:link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: large;
+      }
+      h1 {
+        background-image: url("../images/naver.png");
+        width: 196px;
+        height: 62px;
+        text-indent: -9999;
+        margin-left: 0px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1>
+        <a href=""></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">aout</a></li>
+          <li><a href="#">Log11</a></li>
+          <li><a href="#">Log344</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
