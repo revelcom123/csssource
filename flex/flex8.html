@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        border: 4px;
+      }
+      body {
+        background-color: #333338;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        color: #444;
+      }
+      .container {
+        border: 2px solid;
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+      }
+      .main-content,
+      .sidebar {
+        background-color: antiquewhite;
+        padding: 6px;
+        margin: 10px;
+      }
+      .panel {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+      .main-content {
+        flex: 2; /* 비율 */
+      }
+      .sidebar {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iure
+            minima neque recusandae reiciendis reprehenderit porro. Excepturi
+            quos enim ipsam sed eos. Omnis voluptas, amet adipisci sequi rerum
+            aperiam id.
+          </p>
+          <img
+            src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/laptip001.jpg"
+          />
+          <h3>Sub Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+            porro vero voluptas iusto. Fugit, at accusamus nesciunt natus
+            architecto dolorum perspiciatis consectetur quibusdam aliquam
+            maiores labore dolorem, suscipit et ipsa.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, omnis
+            nesciunt quod corrupti error tempore quos, quae facilis consequuntur
+            pariatur, recusandae ipsa repudiandae eaque asperiores eum labore
+            possimus nostrum veniam!
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            nihil consequuntur deserunt inventore, provident possimus ipsa rem
+            veniam ullam adipisci officia voluptate reiciendis rerum hic odit,
+            et ab, reprehenderit ex!
+          </p>
+        </div>
+      </aside>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            nihil consequuntur deserunt inventore, provident possimus ipsa rem
+            veniam ullam adipisci officia voluptate reiciendis rerum hic odit,
+            et ab, reprehenderit ex!
+          </p>
+        </div>
+      </aside>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            nihil consequuntur deserunt inventore, provident possimus ipsa rem
+            veniam ullam adipisci officia voluptate reiciendis rerum hic odit,
+            et ab, reprehenderit ex!
+          </p>
+        </div>
+      </aside>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            nihil consequuntur deserunt inventore, provident possimus ipsa rem
+            veniam ullam adipisci officia voluptate reiciendis rerum hic odit,
+            et ab, reprehenderit ex!
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        order: 2;
+        background-color: white;
+        padding: 25px;
+      }
+      .flexbg .sidebar {
+        padding: 25px;
+        width: 20%;
+        color: white;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #34495e;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: red;
+      }
+      /* 태블릿 화면 */
+      @media screen and(max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 2;
+        }
+        .flexbg .left {
+          order: 1;
+          width: 50%;
+        }
+        .flexbg .right {
+          order: 3;
+          width: 50%;
+        }
+      }
+      /* 모바일 화면 */
+      @media screen and(max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          qui autem soluta, ducimus impedit, quas perferendis cum voluptatibus,
+          iure minus praesentium iusto aliquam cumque ut corporis. Consequuntur
+          et ad repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Distinctio qui autem soluta, ducimus impedit, quas perferendis
+          cum voluptatibus, iure minus praesentium iusto aliquam cumque ut
+          corporis. Consequuntur et ad repudiandae. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Enim ipsam inventore repudiandae
+          corrupti, quos rerum quasi obcaecati est at hic suscipit qui numquam.
+          Distinctio, ipsum consequatur pariatur facere maxime possimus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quasi
+          alias, in autem ducimus voluptatum impedit quos, deleniti esse placeat
+          eaque porro non eveniet deserunt vero iure molestiae suscipit.
+          Magni.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Distinctio qui autem soluta, ducimus impedit, quas perferendis cum
+          voluptatibus, iure minus praesentium iusto aliquam cumque ut corporis.
+          Consequuntur et ad repudiandae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Est, adipisci. Adipisci neque alias officiis iure
+          obcaecati asperiores optio odit! Pariatur explicabo accusamus aliquam
+          nihil a quisquam placeat voluptatum commodi tenetur.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      * {
-        margin: 0px auto;
-        padding: 0px;
-      }
-      .portpolio {
-        background-color: black;
-        width: 960px;
-      }
-      .portpolio li {
-        float: left;
-        background-color: aqua;
-        width: 225px;
-        height: 225px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        list-style: none;
-      }
-      .portpolio li:nth-child(4n) {
-        margin-right: 0;
-      }
-      .clearfix::after {
-        content: "";
-        clear: both;
-        display: block;
-      }
+        *{
+            margin: 0 auto;
+            padding:0;
+        }
+        .portfolio{
+            width: 960px;   
+            background-color: black;         
+        }
+        .portfolio li{
+            float: left;
+            list-style: none;
+            width: 225px;
+            height: 225px;
+            background-color: cadetblue;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .portfolio li:nth-child(4n){
+            margin-right: 0;
+        }       
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
     </style>
-  </head>
-  <body>
-    <ul class="portpolio clearfix">
-      <li>pic1</li>
-      <li>pic2</li>
-      <li>pic3</li>
-      <li>pic4</li>
-      <li>pic5</li>
-      <li>pic6</li>
-      <li>pic7</li>
-      <li>pic8</li>
-      <li>pic9</li>
-      <li>pic10</li>
-      <li>pic11</li>
-      <li>pic12</li>
+</head>
+<body>
+    <ul class="portfolio clearfix">
+        <li>pic1</li>
+        <li>pic2</li>
+        <li>pic3</li>
+        <li>pic4</li>
+        <li>pic5</li>
+        <li>pic6</li>
+        <li>pic7</li>
+        <li>pic8</li>
+        <li>pic9</li>
+        <li>pic10</li>
+        <li>pic11</li>
+        <li>pic12</li>
     </ul>
-  </body>
+</body>
 </html>

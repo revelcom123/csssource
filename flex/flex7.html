@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .container .box {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        border: 3px solid red;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* order : 기본값은 0 /음수값/양수값 지정 가능 */
+      .item1 {
+        order: 2;
+      }
+      .item4 {
+        /* order가 같다면 태그 작성 순서 */
+        order: 1;
+      }
+      .item5 {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+  </body>
+</html>
