@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Open Sans";
+            line-height: 25px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .wrapper{
+            max-width:60rem;
+            width:100%;
+            margin: 80px auto;
+        }
+        nav{
+            display: flex;
+            justify-self: conter;
+            font-size: 1.2em; /*19px*/
+            
+        }
+        .menu_item{
+            height: 3em; /*16px*3*/
+            line-height: initial;
+        }
+        .menu_item a{
+            background-color: aqua;
+            color: white;
+            padding-right: 2em;
+            border-right: 0.25em solid #fff;
+            position:relative; /*.menu_item .fa*/
+            overflow: hidden;
+        }
+        .menu_item:last-child a{
+            border-right: 0;
+
+        }
+        .menu_item .fa{
+            background-color: #2980b9;
+            width: 2em;
+            line-height: inherit;
+            text-align: center;
+            /* 마우스를 올리면 색상이 변경 */
+            height: 100%;
+            position: absolute;
+            left: 0;
+        }
+        .menu_item span{
+            display: block;
+            margin-left: 4.5em;
+        }
+        .menu_item a:hover .fa{
+            font-size: 1.25em;
+            width: 3.6em;
+        }
+        .menu_item a::before{
+            content: "aaaaaa";
+            position: absolute;
+            left: 0%;
+            top:0;
+            bottom: 0;
+            right: 100%;
+            background-color: #2980b9;
+            transition: 0.35s;
+            z-index: -1;;
+        }
+        .menu_item a:hover::before{
+            left: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="wrapper">
+        <a href="munu_item">
+            <i class="fa fa-paint-brush"></i>
+            <span>Desinge</span>
+        </a>
+    <div class="menu_item">
+        <a href="#code">
+            <i class="fa fa-code"></i>
+            <span>Coding</span>
+        </a>
+    </div>
+    <div class="menu_item">
+        <a href="#ecommerce">
+            <i class="fa fa-creadit-card"></i>
+            <span>E-commerce</span>
+        </a>
+        <div class="menu_item">
+            <a href="#marketing">
+                <i class="fa fa-bullhorn"></i>
+                <span>maketing</span>
+            </a>
+        </div>
+        </nav>
+</body>
+</html>

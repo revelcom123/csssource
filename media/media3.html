@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        line-height: 25px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 80px auto;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em; /*19px*/
+      }
+      .menu_item {
+        height: 3em; /* 16px*3*/
+        line-height: 3em;
+      }
+      .menu_item a {
+        display: block;
+        background-color: #3498db;
+        color: white;
+        padding-right: 2em;
+        border-right: 0.25em solid #fff;
+        position: relative; /* .menu_item .fa 기준 */
+        overflow: hidden;
+        z-index: 1;
+      }
+      .menu_item:last-child a {
+        border-right: 0;
+      }
+      .menu_item .fa {
+        background-color: #2980b9;
+        width: 3em;
+        line-height: inherit;
+        text-align: center;
+
+        /*마우스를 올리면 색상변경*/
+        height: 100%;
+        position: absolute;
+        left: 0;
+      }
+      .menu_item span {
+        display: block;
+        margin-left: 4.5em;
+        white-space: nowrap;
+      }
+
+      .menu_item a:hover .fa {
+        font-size: 1.25em;
+        width: 3.6em;
+      }
+      .menu_item a::before {
+        content: "aaaaaa";
+        position: absolute;
+        left: 0%;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        background-color: #2980b9;
+        transition: 0.35s;
+        z-index: -1;
+      }
+      @media screen and (max-width: 880px) {
+        .menu_item a:hover .fa {
+          font: size 1.25em;
+          width: 3.6em;
+        }
+        .menu_item a:hover:before {
+          left: 0;
+          right: 0;
+        }
+      }
+      @media screen and (max-width: 880px) {
+        .menu_item span {
+          margin-left: 1em;
+          width: 0;
+          transition: 0.5s;
+        }
+        .menu_item a:hover span {
+          margin-left: 4.5em;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="menu_item">
+          <a href="#design">
+            <i class="fa fa-paint-brush"></i>
+            <span>Design</span>
+          </a>
+        </div>
+        <div class="menu_item">
+          <a href="#code">
+            <i class="fa fa-code"></i>
+            <span>Coding</span>
+          </a>
+        </div>
+        <div class="menu_item">
+          <a href="#ecommerce">
+            <i class="fa fa-credit-card"></i>
+            <span>E-Commerce</span>
+          </a>
+        </div>
+        <div class="menu_item">
+          <a href="#marketing">
+            <i class="fa fa-bullhorn"></i>
+            <span>Marketing</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
